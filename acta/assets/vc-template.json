@@ -1,0 +1,13 @@
+{
+  "$comment": "Minimal W3C Verifiable Credentials 2.0 payload for ACTA vcData. The holder is credentialSubject.id (a DID). @context is added automatically by the SDK when missing, but include it for the raw API. Max 10,000 chars once stringified; vcId (separate field) max 64 chars.",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://www.w3.org/ns/credentials/examples/v2"
+  ],
+  "type": ["VerifiableCredential"],
+  "credentialSubject": {
+    "id": "did:stellar:testnet:REPLACE_WITH_HOLDER_DID",
+    "name": "Ada Lovelace",
+    "role": "Engineer"
+  }
+}
