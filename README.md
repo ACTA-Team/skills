@@ -10,11 +10,14 @@ and your agent stops guessing about ACTA: package names, base URLs, the
 prepare/submit flow, `did:stellar` issuer identity, error codes, and the security
 model come from the docs, not from stale training data.
 
+**Browse on skills.sh:** [skills.sh/acta-team/skills](https://www.skills.sh/acta-team/skills)
+· **Docs:** [docs.acta.build/en/agent-skills](https://docs.acta.build/en/agent-skills)
+
 ## Skills in this repo
 
-| Skill | What it does |
-|-------|--------------|
-| [`acta`](./acta) | End-to-end ACTA integration: issue, verify, and revoke W3C Verifiable Credentials with the `@acta-team/credentials` SDK or the REST API; create single-tenant vaults; manage issuer allow/deny; resolve `did:stellar`; handle errors; understand the security model. |
+| Skill | Page | What it does |
+|-------|------|--------------|
+| [`acta`](./acta) | [skills.sh](https://www.skills.sh/acta-team/skills/acta) | End-to-end ACTA integration: issue, verify, and revoke W3C Verifiable Credentials with the `@acta-team/credentials` SDK or the REST API; create single-tenant vaults; manage issuer allow/deny; resolve `did:stellar`; handle errors; understand the security model. |
 
 ## Install
 

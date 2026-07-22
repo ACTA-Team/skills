@@ -14,6 +14,8 @@ metadata:
   version: 1.0.0
   homepage: https://docs.acta.build
   repository: https://github.com/ACTA-Team/skills
+  skillPage: https://www.skills.sh/acta-team/skills/acta
+  docs: https://docs.acta.build/en/agent-skills
   package: "@acta-team/credentials"
   networks: [testnet, mainnet]
 ---
