@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "ACTA",
+      "description": "Build with ACTA, the non-custodial Verifiable Credentials infrastructure on Stellar: issue, verify, and revoke W3C credentials with the SDK or REST API, manage single-tenant vaults, and resolve did:stellar issuer identity.",
+      "skills": ["acta"]
+    }
+  ]
+}
