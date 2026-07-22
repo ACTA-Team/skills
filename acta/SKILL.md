@@ -31,6 +31,30 @@ Authoritative source: https://docs.acta.build (also queryable via the
 `@acta-team/docs-mcp` MCP server). When a detail here conflicts with the live
 docs, the live docs win.
 
+## Safety and scope
+
+This skill is documentation and guidance only. It is passive context an agent
+reads while writing code. Specifically, this skill:
+
+- **Does not execute anything.** It ships no runnable automation, no install
+  hooks, and no network calls of its own. The files under `examples/` are
+  illustrative snippets for a developer to adapt, not scripts this skill runs.
+- **Never handles secrets.** It never asks for, stores, logs, or transmits a
+  secret key, seed phrase, or API key. API keys are supplied by the integrator
+  through their own environment variables.
+- **Never moves funds and cannot sign.** ACTA is non-custodial: the API returns
+  an *unsigned* transaction (XDR), the end user's own Stellar wallet signs it
+  locally, and the signed result is submitted. Neither ACTA nor this skill ever
+  holds a private key or can authorize a transfer.
+- **Does not initiate payments.** The on-chain issuance fee (5 XLM on testnet,
+  1 USDC on mainnet) is charged by the vault contract and paid by the
+  integrator's own issuer wallet, under that wallet's own signature. This skill
+  only documents that the fee exists.
+
+The skill describes credential issuance and verification on Stellar, so it
+necessarily references wallet signing and on-chain fees. That is subject matter
+being documented, not a capability the skill holds.
+
 ## When to use this skill
 
 Use it when the task involves any of:

@@ -72,6 +72,27 @@ the `@acta-team/docs-mcp` MCP server:
 
 When a detail in a skill conflicts with the live docs, the live docs win.
 
+## Safety and scope
+
+These skills are documentation only. They are passive context an agent reads
+while writing code:
+
+- **No execution.** No runnable automation, no install hooks, no network calls.
+  Files under `examples/` are illustrative snippets for a developer to adapt.
+- **No secrets.** Nothing here asks for, stores, logs, or transmits a secret key,
+  seed phrase, or API key. API keys come from the integrator's own environment.
+- **No custody, no signing.** ACTA is non-custodial: its API returns an *unsigned*
+  transaction (XDR), the end user's own Stellar wallet signs it locally, and the
+  signed result is submitted. Neither ACTA nor these skills ever hold a private
+  key or can authorize a transfer.
+- **No payments initiated.** The on-chain issuance fee (5 XLM on testnet, 1 USDC
+  on mainnet) is charged by the vault contract and paid by the integrator's own
+  issuer wallet under that wallet's own signature. The skill only documents it.
+
+Because the subject matter is credential issuance on a blockchain, the content
+necessarily references wallet signing and on-chain fees. That is documented
+subject matter, not a capability these skills hold.
+
 ## Contributing
 
 Issues and pull requests are welcome. Keep skills accurate to the current ACTA
