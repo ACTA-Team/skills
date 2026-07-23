@@ -1,26 +1,29 @@
 ---
-name: acta
+name: stellar-verifiable-credentials
 description: >-
-  Integrate ACTA verifiable credentials infrastructure on the Stellar blockchain.
-  Use this skill whenever the user works with ACTA, the @acta-team/credentials SDK,
-  did:stellar identities, credential vaults, or the ACTA REST API (api.testnet.acta.build /
-  api.mainnet.acta.build). Covers issuing, verifying, and revoking W3C Verifiable
-  Credentials, creating single-tenant vaults, managing issuer permissions, resolving
-  did:stellar, error handling, and the security model. Trigger terms: ACTA, verifiable
-  credentials, VC, credential vault, did:stellar, Soroban credentials, Stellar credentials,
-  issue credential, verify credential, X-ACTA-Key.
+  Issue, verify, and revoke W3C Verifiable Credentials on the Stellar blockchain with
+  ACTA, the non-custodial credentials infrastructure built on Soroban. Use this skill
+  whenever the user works with verifiable credentials, digital diplomas, certificates,
+  badges, KYC attestations or proof-of-membership on Stellar, with did:stellar
+  identities, credential vaults, the @acta-team/credentials React SDK, or the ACTA REST
+  API (api.testnet.acta.build / api.mainnet.acta.build). Covers the prepare/submit XDR
+  flow, single-tenant vaults, issuer permissions, did:stellar resolution, error handling,
+  and the security model. Trigger terms: verifiable credentials, VC, W3C credential,
+  did:stellar, DID, credential vault, Soroban credentials, Stellar credentials, issue
+  credential, verify credential, revoke credential, on-chain certificate, ACTA,
+  X-ACTA-Key.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   homepage: https://docs.acta.build
   repository: https://github.com/ACTA-Team/skills
-  skillPage: https://www.skills.sh/acta-team/skills/acta
+  skillPage: https://www.skills.sh/acta-team/skills/stellar-verifiable-credentials
   docs: https://docs.acta.build/en/agent-skills
   package: "@acta-team/credentials"
   networks: [testnet, mainnet]
 ---
 
-# ACTA: Verifiable Credentials on Stellar
+# Verifiable Credentials on Stellar (ACTA)
 
 ACTA is non-custodial Verifiable Credentials infrastructure for the Stellar
 blockchain. Soroban smart contracts hold the credential lifecycle on-chain; an

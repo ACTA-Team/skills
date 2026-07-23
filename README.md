@@ -17,7 +17,7 @@ model come from the docs, not from stale training data.
 
 | Skill | Page | What it does |
 |-------|------|--------------|
-| [`acta`](./acta) | [skills.sh](https://www.skills.sh/acta-team/skills/acta) | End-to-end ACTA integration: issue, verify, and revoke W3C Verifiable Credentials with the `@acta-team/credentials` SDK or the REST API; create single-tenant vaults; manage issuer allow/deny; resolve `did:stellar`; handle errors; understand the security model. |
+| [`stellar-verifiable-credentials`](./stellar-verifiable-credentials) | [skills.sh](https://www.skills.sh/acta-team/skills/stellar-verifiable-credentials) | End-to-end ACTA integration: issue, verify, and revoke W3C Verifiable Credentials with the `@acta-team/credentials` SDK or the REST API; create single-tenant vaults; manage issuer allow/deny; resolve `did:stellar`; handle errors; understand the security model. |
 
 ## Install
 
@@ -27,8 +27,8 @@ Install into any supported agent with the skills CLI:
 # Install every skill in this repo
 npx skills add ACTA-Team/skills
 
-# Or install just the acta skill
-npx skills add ACTA-Team/skills/acta
+# Or install just the credentials skill
+npx skills add ACTA-Team/skills/stellar-verifiable-credentials
 ```
 
 The CLI writes the skill into your agent's skills directory (for example
@@ -38,9 +38,10 @@ the [skills.sh docs](https://www.skills.sh/docs) for per-agent details.
 ### Manual install
 
 Each skill is a self-contained folder with a `SKILL.md`. You can also copy the
-`acta/` folder directly into your agent's skills directory.
+`stellar-verifiable-credentials/` folder directly into your agent's skills
+directory.
 
-## What the `acta` skill covers
+## What the `stellar-verifiable-credentials` skill covers
 
 - The `@acta-team/credentials` React SDK: `ActaConfig`, `useCredential`,
   `useVault`, `useVaultRead`, `useActaClient`, and `ActaClient`.
@@ -52,9 +53,10 @@ Each skill is a self-contained folder with a `SKILL.md`. You can also copy the
   the mainnet USDC fee failures.
 - The security and data model: who signs what, what is on-chain vs encrypted.
 
-The skill is structured for progressive disclosure. `acta/SKILL.md` is the entry
-point; deeper material lives in `acta/references/`, with runnable code in
-`acta/examples/`.
+The skill is structured for progressive disclosure.
+`stellar-verifiable-credentials/SKILL.md` is the entry point; deeper material
+lives in `stellar-verifiable-credentials/references/`, with runnable code in
+`stellar-verifiable-credentials/examples/`.
 
 ## Source of truth
 
