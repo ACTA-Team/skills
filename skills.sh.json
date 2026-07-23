@@ -3,9 +3,9 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "Verifiable Credentials on Stellar",
+      "title": "ACTA",
       "description": "Build with ACTA, the non-custodial Verifiable Credentials infrastructure on Stellar: issue, verify, and revoke W3C credentials with the SDK or REST API, manage single-tenant vaults, and resolve did:stellar issuer identity.",
-      "skills": ["stellar-verifiable-credentials"]
+      "skills": ["acta"]
     }
   ]
 }

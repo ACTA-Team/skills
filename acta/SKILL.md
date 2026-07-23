@@ -1,5 +1,5 @@
 ---
-name: stellar-verifiable-credentials
+name: acta
 description: >-
   Issue, verify, and revoke W3C Verifiable Credentials on the Stellar blockchain with
   ACTA, the non-custodial credentials infrastructure built on Soroban. Use this skill
@@ -17,13 +17,13 @@ metadata:
   version: 1.1.0
   homepage: https://docs.acta.build
   repository: https://github.com/ACTA-Team/skills
-  skillPage: https://www.skills.sh/acta-team/skills/stellar-verifiable-credentials
+  skillPage: https://www.skills.sh/acta-team/skills/acta
   docs: https://docs.acta.build/en/agent-skills
   package: "@acta-team/credentials"
   networks: [testnet, mainnet]
 ---
 
-# Verifiable Credentials on Stellar (ACTA)
+# ACTA: Verifiable Credentials on Stellar
 
 ACTA is non-custodial Verifiable Credentials infrastructure for the Stellar
 blockchain. Soroban smart contracts hold the credential lifecycle on-chain; an
